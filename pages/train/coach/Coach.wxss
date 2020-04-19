@@ -1,0 +1,28 @@
+/* pages/train/coach/Coach.wxss */
+
+.ad-box {
+	background-color: #d1d1d11c;
+	height: 266rpx;
+	padding: 15rpx;
+}
+
+.ad-banner {
+	border-radius: 25rpx;
+	height: 100%;
+	width: 100%;
+}
+
+.CoachListSlot{
+	margin-top: 8rpx; 
+	padding: 3px 106px; 
+	font-size: 36rpx;	
+}
+
+.title-left {
+	font-weight: bold;
+}
+
+.shade {
+	background: #008B8B;
+	height: 100vh;
+}

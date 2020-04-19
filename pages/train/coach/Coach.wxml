@@ -1,0 +1,9 @@
+<view class="ad-box">
+	<image class="ad-banner" src="{{imgBaseUrl}}/AD-01.png" />
+</view>
+<SlotHome class='CoachListSlot'>
+	<text slot='title-left' class="title-left">私教课程</text>
+	<view slot='slot-content'>
+		<CoachType coachType='{{coachType}}' bind:clickType='clickType'></CoachType>
+	</view>
+</SlotHome>

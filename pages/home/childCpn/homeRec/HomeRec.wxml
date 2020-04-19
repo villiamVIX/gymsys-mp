@@ -1,0 +1,6 @@
+<!--pages/home/childCpn/homeRec/HomeRec.wxml-->
+<view class="HomeRec" bindtap='{{getUser}}'>
+	<image class="recImg" src="{{recommend.img}}"></image>
+	<text class="recTitle">{{recommend.title}}</text>
+	<text class="recDesc">{{recommend.desc}}</text>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/entrance/Entrance.wxml-->
+<view id="Entrance">
+	<EntranceCode></EntranceCode>
+</view>

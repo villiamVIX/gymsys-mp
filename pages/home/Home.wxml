@@ -1,0 +1,16 @@
+<view id="home">
+	<image class="gymlogo" src="{{imgBaseUrl}}/logo.png"></image>
+	<HomeSwiper wx:if='{{swipers}}' swipers='{{swipers}}'></HomeSwiper>
+	<HomeGrid></HomeGrid>
+
+	<FatHr></FatHr>
+	<HomeSlot showRight title='最新讯息'>
+		<HomeScrollNews newsList='{{newsList}}'></HomeScrollNews>
+	</HomeSlot>
+	<FatHr></FatHr>
+	<HomeSlot showRight='{{0}}' title='推荐课程'>
+		<HomeRec recommend='{{recommend}}'></HomeRec>
+	</HomeSlot>
+	<button open-type="getUserInfo" bindgetuserinfo="handleGetData"
+	type="primary" size="mini" loading>获取权限</button>
+</view>

@@ -1,0 +1,10 @@
+<!--components/HomeSlot/HomeSlot.wxml-->
+<view class="HomeSlot">
+	<view class="SlotTop">
+		<text class="SlotTitle">{{title}}</text>
+		<text class="SlotRight" wx:if='{{showRight}}'>查看 ></text>
+	</view>
+	<view class="SlotContent">
+		<slot></slot>
+	</view>
+</view>

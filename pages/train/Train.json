@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "Coach":"./coach/Coach",
+    "Lesson":"./lesson/Lesson",
+	"category-bar": "/components/category-bar/category-bar",
+	"load-more": "/components/load-more/index",
+	"CoachDetail":"./coach/childCpn/CoachDetail/CoachDetail"
+  },
+  
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTitleText": "训练中心",
+  "navigationBarTextStyle": "black"
+}

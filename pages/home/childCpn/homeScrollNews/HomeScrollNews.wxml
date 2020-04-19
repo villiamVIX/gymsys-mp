@@ -1,0 +1,9 @@
+<!--pages/home/childCpn/homeScrollNews/HomeScrollNews.wxml-->
+<scroll-view class="scrollView" scroll-x="true" style=" width: 100%;height: 100%;white-space: nowrap;">
+	<block wx:for='{{newsList}}' wx:for-item="newsList" wx:key='_id'>
+		<view  class="newsBox" style='display: inline-block;'>
+			<image class="newsImg" src='{{newsList.imgs[0]}}' bindtap='bigimg'></image>
+			<view class="newsTitle">{{newsList.title}}</view>
+		</view>
+	</block>
+</scroll-view>

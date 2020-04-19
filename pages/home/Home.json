@@ -1,0 +1,15 @@
+{
+
+	"component": true,
+	"usingComponents": {
+		"HomeSwiper": "./childCpn/homeSwiper/HomeSwiper",
+		"HomeGrid": "./childCpn/homeGrid/HomeGrid",
+		"HomeScrollNews": "./childCpn/homeScrollNews/HomeScrollNews",
+		"HomeRec": "./childCpn/homeRec/HomeRec",
+
+		"HomeSlot": "/components/Slot/HomeSlot",
+		"FatHr": "/components/FatHr/FatHr"
+	},
+	"navigationStyle":"custom"
+
+}

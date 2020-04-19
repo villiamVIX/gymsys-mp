@@ -1,0 +1,28 @@
+/* pages/entrance/childCpn/EntranceCode/EntranceCode.wxss */
+
+.entrance-code {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 28rpx;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 2px 7px 0px #27262652;
+	padding: 50rpx 0;
+}
+
+.entrance-title {
+	flex: 1;
+	color: #38383B !important;
+	margin: 30rpx auto;
+	font-size: 39rpx !important; 
+	font-weight: bold;
+}
+.entrance-img{
+	height: 460rpx;
+	width: 460rpx;
+}
+.entrance-code text{
+	font-size: 26rpx;
+	color: gray;
+}

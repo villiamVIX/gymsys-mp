@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:for-item="grid" wx:key="color" >
+                <navigator  class="weui-grid" hover-class="weui-grid_active"
+				open-type="redirect"
+				url="/pages/train/Train">
+                    <i class="icon gymIcon-home-{{grid.image}} {{grid.color}}" >
+                    	<span wx:for='{{3}}'  wx:key="item" class='path{{item}}'></span>
+                    </i>
+                    <view class="weui-grid__label">{{grid.title}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

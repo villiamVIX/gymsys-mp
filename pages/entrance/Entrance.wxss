@@ -1,0 +1,7 @@
+/* pages/entrance/Entrance.wxss */
+#Entrance {
+		height: 100vh;
+		padding-top: 10vh;
+		background-color: #09cd8a;
+		position: relative;
+	}

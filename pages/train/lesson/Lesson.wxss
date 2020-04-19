@@ -1,0 +1,58 @@
+/* pages/train/lesson/Lesson.wxss */
+.father {
+		display: flex;
+		justify-content: space-around;
+		width: 90%;
+		font-size: 24.8rpx;
+		height: 1655rpx;
+	}
+
+	.Lesson-father {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex: 1;
+	}
+
+	.week-father {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0 64rpx;
+	}
+
+	.week {
+		padding: .3rem;
+		border-radius: 6rpx;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-size: 24rpx;
+		color: #80807f;
+		font-weight: bold;
+		background: #f9f8f6;
+	}
+
+	.lesson-box {
+		margin-top: .4rem;
+		background-color: #f9f8f6;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 188rpx;
+		height: 178rpx;
+		padding: 0.5rem;
+		border-radius: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.thinText{
+		font-weight: bold;
+		color: #80807f;
+	}
+	.strongText{
+			color: black;
+			font-weight: bold;
+			font-size: 34rpx;
+	}
+	.thinText:first-of-type{
+		font-size: 23rpx;
+	}

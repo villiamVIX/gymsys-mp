@@ -1,0 +1,19 @@
+/* pages/home/childCpn/homeScrollNews/HomeScrollNews.wxss */
+.scrollView{
+}
+.newsBox{
+	margin: 8rpx 10rpx;
+	width: 248rpx;
+	overflow: hidden;
+}
+.newsImg{
+	height: 160rpx;
+	width: 240rpx;
+	border-radius: 8rpx;
+	box-shadow: 0px 0px 8px 0px #58675c5c
+}
+.newsTitle{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}

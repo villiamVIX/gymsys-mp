@@ -1,0 +1,8 @@
+<!--textages/entrance/childCtextn/EntranceCode/EntranceCode.wxml-->
+
+<view class="entrance-code">
+	<text class="entrance-title">健身房入场码</text>
+	<image class="entrance-img" src="{{baseUrl}}/users/entrance" />
+		<text>· 当日只可打卡一次哦</text>
+		<text>· 入场即可记入当日打卡</text>
+</view>

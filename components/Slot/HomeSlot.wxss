@@ -1,0 +1,20 @@
+/* components/HomeSlot/HomeSlot.wxss */
+.HomeSlot{
+	width: 100%;
+}
+.SlotTop{
+	display: flex; 
+	min-width: 80vw;
+	max-width: 90vw;
+	font-size: 32rpx;
+	color: #666;
+	 padding: 0 15rpx; 
+}
+.SlotTitle{
+	font-weight: bold;
+}
+.SlotRight{
+	font-size: 26.8rpx;
+	position: absolute;
+	right: 15rpx;
+}

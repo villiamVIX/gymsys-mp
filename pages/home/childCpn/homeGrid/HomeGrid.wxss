@@ -1,0 +1,54 @@
+.page{
+	height: 200rpx;
+}
+.weui-grid {
+	float: left; 
+	display: flex;
+	flex-direction: column;
+	padding: 0 40rpx ;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.weui-grid_active {
+	background-color: #ececec
+}
+.icon{
+	flex: 1;
+	border-radius: 309rpx;
+	padding: 25.6rpx;
+	height: 56.2rpx;
+	text-align: center;
+	font-size: 52rpx;
+} 
+
+.weui-grid__label {
+	margin-top: 5px;
+	display: block;
+	text-align: center;
+	color: rgba(0, 0, 0, .9);
+	font-size: 29.25rpx;
+	white-space: nowrap;
+}
+
+.color1 {
+	background-color: #00d0ff69;
+	    box-shadow: 0px 13px 8px -8px #00c6f15e;
+		font-size: 64rpx;
+}
+
+.color2 {
+	background-color: #979aef;
+	box-shadow: 0px 13px 8px -8px #aeb2ef;
+}
+
+.color3 {
+	background-color: #fa7e7d;
+	box-shadow: 0px 13px 8px -8px #faa1a1;
+	font-size: 60rpx;
+}
+
+.color4 {
+	background-color: #1dcab4;
+	box-shadow: 0px 13px 8px -8px #3addbd;
+}

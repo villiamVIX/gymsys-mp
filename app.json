@@ -1,0 +1,22 @@
+{
+  "pages": [
+	  "pages/drawer/drawer",
+    "pages/home/Home",
+    "pages/train/Train",
+    "pages/profile/Profile",
+    "pages/entrance/Entrance",
+    "pages/logs/logs",
+    "pages/train/lesson/Lesson",
+    "pages/train/coach/Coach",
+    "components/Actionsheet/Actionsheet"
+  ],
+  "window": {
+    
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GymVue",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

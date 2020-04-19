@@ -1,0 +1,70 @@
+/* pages/train/coach/childCpn/CoachList/CoachList.wxss */
+.CoachItems:hover {
+	border: 1px solid #7bec75a1;
+	background-color: #e0f5de69;
+}
+
+.CoachItems {
+	display: flex;
+	border: 1px solid #E5F0F7;
+	border-radius: 18rpx;
+	margin: 1.25rem;
+	padding:  18rpx;
+	align-items: center;
+}
+
+.coach-img {
+	flex: 1;
+	padding-top: 0.187rem;
+}
+
+.coach-img image {
+	border-radius: 55rpx;
+	height: 110rpx;
+	width:  110rpx;
+}
+
+text{
+word-break: keep-all;
+word-wrap: break-word;
+}
+
+.coach-info {
+	flex: 3;
+
+	font-size: 28rpx ;
+	margin-left: 10rpx
+}
+
+.coach-name {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.coach-level {
+	border-radius: 10rpx;
+	background-color: #FDF6D3;
+	width: 130rpx;
+	text-align: center;
+	height: 40rpx;
+	color: #645D2E;
+	float: right;
+	 margin: 0.125rem 15rpx 0 0; 
+}
+
+.coach-major{
+	font-size: 28rpx;
+	color: #393939;
+}
+.coach-freq {
+	padding: 0.5rem 0;
+	font-size: 24rpx;
+	color: #A3A2A3;
+}
+
+.coach-price {
+	color: #E57464;
+	font-size: 1.125rem;
+	width: 3.125rem;
+}
+

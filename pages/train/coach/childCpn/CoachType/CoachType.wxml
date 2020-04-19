@@ -1,0 +1,5 @@
+<view class="coachType">
+	<image wx:for="{{coachType}}" wx:key='index'
+	 data-type='{{index}}' bindtap="clickType"
+	  class="type-img" src="{{imgBaseUrl}}{{item.imgUrl}}" />
+</view>

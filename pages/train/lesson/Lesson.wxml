@@ -1,0 +1,15 @@
+<view class="father">
+	<view class="week-father">
+		<view class="week" wx:for="{{7}}" wx:key="item">周{{weekList[index]}}</view>
+	</view>
+	<view class="Lesson-father">
+		<block wx:for='{{Lesson}}' wx:key='_id'>
+			<view class="lesson-box">
+				<text class="thinText lesson-time">{{item.time}}-{{item.during}}mins</text>
+				<text class='strongText'>{{item.lessonName}}</text>
+				<text class="thinText">{{item.type}}</text>
+				<text class='strongText'>{{item.teacher}}</text>
+			</view>
+		</block>
+	</view>
+</view>

@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="default" bindtap="openDialog"> ActionSheet</button>
+        </view>
+    </view>
+    <view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}">
+      <view class="weui-mask" bindtap="closeDialog"></view>
+      <view class="weui-actionsheet {{istrue ? 'weui-actionsheet_toggle' : ''}}" catchtap="stopEvent">
+          <view class="weui-actionsheet__title">
+              <view class="weui-actionsheet__title-text">教练xxx。</view>
+          </view>
+          <view class="weui-actionsheet__menu">
+              <view class="weui-actionsheet__cell">s</view>
+              <view class="weui-actionsheet__cell">示例菜单</view>
+          </view>
+          <view class="weui-actionsheet__action">
+              <view class="weui-actionsheet__cell" bindtap="closeDialog">取消</view>
+          </view>
+      </view>
+    </view>
+</view>
