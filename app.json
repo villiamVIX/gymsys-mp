@@ -1,6 +1,5 @@
 {
   "pages": [
-	  "pages/drawer/drawer",
     "pages/home/Home",
     "pages/train/Train",
     "pages/profile/Profile",
@@ -8,10 +7,11 @@
     "pages/logs/logs",
     "pages/train/lesson/Lesson",
     "pages/train/coach/Coach",
-    "components/Actionsheet/Actionsheet"
+    "components/Actionsheet/Actionsheet",
+    "pages/comfirm/Comfirm",
+    "pages/comfirm/childCpn/ConfirmCohInfo/ConfirmCohInfo"
   ],
   "window": {
-    
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "GymVue",

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "category-bar": "/components/category-bar/category-bar",
+	  "load-more": "/components/load-more/index"
+  }
+}

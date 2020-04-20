@@ -1,0 +1,43 @@
+/* pages/comfirm/childCpn/ConfirmCohInfo/ConfirmCohInfo.wxss */
+.ConfirmCohInfo {
+	display: flex;
+	font-size: 14px;
+	padding: 0px 15px;
+	height: 82px;
+}
+
+.coach-image {
+	align-self: center;
+}
+
+.coach-pic {
+	border-radius: 65px;
+	flex: 5;
+	height: 70px;
+	width: 70px;
+
+}
+
+.coach-info {
+	flex: 5;
+	margin-left: 13px;
+	align-self: center;
+}
+
+.coach-name {
+	margin-bottom: 4%;
+	font-size: 18px;
+}
+
+.coach-price {
+	padding-top: 20px;
+	color: #E57464;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.cu-btn{
+
+	color: white;
+	align-self: center;
+}

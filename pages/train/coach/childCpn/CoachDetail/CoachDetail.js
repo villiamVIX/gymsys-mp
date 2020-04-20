@@ -20,6 +20,11 @@ Component({
 	 * 组件的方法列表
 	 */
 	methods: {
-
+		clickCoach(e){
+			const cId=e.currentTarget.dataset.coachid
+			wx.navigateTo({
+				url:'/pages/comfirm/Comfirm?coachId='+cId
+			})
+		}
 	}
 })

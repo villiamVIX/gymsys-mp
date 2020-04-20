@@ -1,39 +1,30 @@
 <block wx:if="{{Lesson}}">
 	<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
-
-			<view class="container">
-				<view class="category-bar__wrap">
-					<!-- 如果选项很多屏幕宽度不够，scroll设置为true滚动显示，否则scroll设置为false时使用flex布局均匀分布 -->
-					<category-bar current="{{current}}" key="name" bind:change="handleCategoryChange"></category-bar>
-				</view>
-				<view class="swiper__wrap">
-					<!-- <button  bindtap="showModal" data-target="viewModal">ssss</button> -->
-					<swiper indicator-dots="{{false}}" autoplay="{{false}}" current="{{current}}" style="height:100%;" bindchange="handleCategoryChange">
-						<swiper-item class="coach">
-							<Coach class='Coach' 
-							bind:showModal='showModal' data-target="viewModal"
-							CoachList='{{CoachList}}'></Coach>
-						</swiper-item>
-						<swiper-item class="lesson">
-							<Lesson class='Lesson' Lesson='{{Lesson}}'></Lesson>
-						</swiper-item>
-					</swiper>
-				</view>
+		<view class="container">
+			<view class="category-bar__wrap">
+				<!-- 如果选项很多屏幕宽度不够，scroll设置为true滚动显示，否则scroll设置为false时使用flex布局均匀分布 -->
+				<category-bar current="{{current}}" tabsTitle='{{tabsTitle}}'
+				 key="name" bind:change="handleCategoryChange"></category-bar>
 			</view>
+			<view class="swiper__wrap">
+				<swiper indicator-dots="{{false}}" autoplay="{{false}}" current="{{current}}" style="height:100%;" bindchange="handleCategoryChange">
+					<swiper-item class="coach" >
+						<Coach class='Coach' 
+						 bind:clickType='showModal'
+						data-target="viewModal" CoachList='{{CoachList}}'></Coach>
+					</swiper-item>
+					<swiper-item class="lesson">
+						<Lesson class='Lesson' Lesson='{{Lesson}}'></Lesson>
+					</swiper-item>
+				</swiper>
+			</view>
+		</view>
 	</scroll-view>
 
 	<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
-		<text class="cuIcon-pullright">-></text>
 	</view>
 	<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
 		<CoachDetail CoachDetail='{{CoachDetail}}'></CoachDetail>
-			<!-- <block  wx:for="{{CoachDetail}}" wx:key="index">
-				<view >
-					<image src="{{item.cohPic}}"></image>
-					<text>{{item.name}}</text>
-					<text class="text-grey">{{index +1}}</text>
-				</view>
-			</block> -->
 	</scroll-view>
 
 </block>

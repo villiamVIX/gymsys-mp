@@ -11,3 +11,13 @@ export function getCoachList() {
 		url: '/gymdata/coach',
 	})
 }
+
+
+export function getCoachDetail(id) {
+	return request({
+		url: '/gymdata/coach/detail',
+		data:{
+			id
+		}
+	})
+}

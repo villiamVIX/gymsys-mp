@@ -1,9 +1,6 @@
 {
   "usingComponents": {
 	  "HomeSlot":"/components/Slot/HomeSlot",
-	  "mp-actionSheet": "/components/Actionsheet/Actionsheet",
-	  "CoachType":"./childCpn/CoachType/CoachType",
-	  "CoachList":"./childCpn/CoachType/CoachType",
 	  "load-more": "/components/load-more/index"
   }
 }

@@ -1,0 +1,5 @@
+/* pages/comfirm/Comfirm.wxss */
+.coach-tip{
+	display: flex;
+	flex-direction: column;
+}

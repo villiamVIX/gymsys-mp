@@ -18,15 +18,10 @@
 	padding-top: 0.187rem;
 }
 
-.coach-img image {
+.coach-pic {
 	border-radius: 55rpx;
 	height: 110rpx;
 	width:  110rpx;
-}
-
-text{
-word-break: keep-all;
-word-wrap: break-word;
 }
 
 .coach-info {

@@ -1,15 +1,18 @@
 <!--pages/train/coach/childCpn/CoachList/CoachList.wxml-->
-<view class="CoachItems activeCoh" wx:for='{{CoachDetail}}' wx:key='_id' :key='index' bindtap="clickCoach(_id)">
+	
+<view class="CoachItems activeCoh" wx:for='{{CoachDetail}}' wx:key='_id' 
+ bindtap="clickCoach" data-coachId='{{item._id}}'
+ >
 	<view class="coach-img">
-		<image src="{{item.cohPic}}" />
+		<image class="coach-pic" src="{{item.cohPic}}" />
 	</view>
 	<view class="coach-info">
 		<text class="coach-name">{{item.name}}</text>
 		<view class="coach-level">教练评级{{item.level}}</view>
-		<text class="coach-freq">累计上课{{item.totalCount}}节</text>
+		<view class="coach-freq">累计上课{{item.totalCount}}节</view>
 		<view class="coach-major">
 			主攻:
-		    <text wx:for='{{item.major}}' wx:for-item="major" >{{major}}.</text>
+		    <text wx:for='{{item.major}}' wx:for-item="major" wx:key='index'>{{major}}.</text>
 		</view>
 	</view>
 	<text class="coach-price right">¥{{item.price}}</text>

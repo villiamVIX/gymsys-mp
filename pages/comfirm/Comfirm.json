@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+	  "ConfirmCohInfo":"./childCpn/ConfirmCohInfo/ConfirmCohInfo",
+	  "ConfirmSchedule":"./childCpn/ConfirmSchedule/ConfirmSchedule",
+	  "FatHr": "/components/FatHr/FatHr"
+	  
+  }
+}

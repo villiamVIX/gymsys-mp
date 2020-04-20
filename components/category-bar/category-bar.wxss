@@ -7,11 +7,12 @@
 
 .category-item {
   display: inline-block;
-  padding: 20rpx 0;
+  padding: 5rpx 0;
   text-align: center;
   font-size: 30rpx;
   color: #333333;
   position: relative;
+  height: 100rpx;
 }
 .category-item.current{
   color: #FF6933;
@@ -26,4 +27,26 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
+}
+
+/* 自设属性 */
+.date-box{
+	  height: 80rpx;
+	  color: #5b5454;
+	  font-size: 24rpx;
+}
+
+.date-date{
+	font-size: 27rpx;
+	line-height: 55rpx;
+}
+
+.currentDate{
+	font-size: 27rpx;
+	background-color: #5b5454;
+	border-radius: 355rpx;
+	color: white;
+	text-align: center;
+	height: 55rpx;
+	width:  55rpx;
 }

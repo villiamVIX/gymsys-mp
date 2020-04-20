@@ -63,6 +63,14 @@
 					"id": -1,
 					"name": "pages/train/Train",
 					"pathName": "pages/train/Train",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/comfirm/Comfirm",
+					"pathName": "pages/comfirm/Comfirm",
+					"query": "coachId=5e32ffc4a75a6a0be8bb31e6",
 					"scene": null
 				}
 			]

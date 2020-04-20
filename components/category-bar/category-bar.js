@@ -10,25 +10,30 @@ Component({
 		scroll: {
 			type: Boolean,
 			value: false
-		}
+		},
+		tabsTitle:{
+			type: Array,
+			observer:function(a,b){
+				this.refreshData(a)
+				// console.log(a,b)
+			}
+		},
 	},
-
-	data: {
-		tabsTitle: [{
-				name: '私教',
-				id: 0
-			},
-			{
-				name: '团课',
-				id: 1
-			},
-		]
+	data:{
+		tabs:[]
 	},
 
 	methods: {
+		refreshData(data){
+			// console.log(data)
+			this.setData({
+				tabs:data
+			})
+		},
 		handleTap(e) {
 			const {
-				index
+				index,
+				date
 			} = e.currentTarget.dataset;
 			if (index === this.data.current) return;
 			this.setData({
@@ -36,6 +41,7 @@ Component({
 			});
 			this.triggerEvent("change", {
 				current: index,
+				date
 			});
 		}
 	}

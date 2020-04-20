@@ -1,0 +1,15 @@
+<!--textages/comfirm/Comfirm.wxml-->
+<view id="Confirm">
+	<ConfirmCohInfo coachInfo='{{coachInfo}}'></ConfirmCohInfo>
+	<FatHr></FatHr>
+
+	<ConfirmSchedule coachInfo='{{coachInfo}}'></ConfirmSchedule>
+	<button class="confirm-btn" bindtap="clickBook">确认预约</button>
+	<CardVIX>
+		<view class="coach-tip">
+
+			<text>· 预约成功后请及时到店上课</text>
+			<text>· 可在-我的教练-模块中查看定课</text>
+		</view>
+	</CardVIX>
+</view>

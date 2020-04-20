@@ -1,0 +1,37 @@
+<block wx:if="{{tabsTitle}}">
+	<view class="container">
+		<view class="category-bar__wrap">
+			<!-- 如果选项很多屏幕宽度不够，scroll设置为true滚动显示，否则scroll设置为false时使用flex布局均匀分布 -->
+			<category-bar tabsTitle='{{tabsTitle}}' scroll current="{{current}}" key="name" bind:change="handleCategoryChange"></category-bar>
+		</view>
+		<view class="swiper__wrap">
+			<swiper indicator-dots="{{false}}" autoplay="{{false}}" current="{{current}}" style="height:100%;" bindchange="handleCategoryChange">
+				<block wx:for='{{dateList}}' wx:key='index'>
+					<swiper-item class="book-father">
+						<view class="book-box" wx:for='{{item.time}}' wx:for-item='book' wx:key='book'>
+							<text class="book-time">{{formatTime.time(book.time)}}</text>
+							<!-- <text class="book-statue canBook">可约{{item}}{{book}}</text> -->
+						</view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+	</view>
+</block>
+<block wx:else>
+	<load-more tip="加载分类中" loading="{{ true }}"></load-more>
+</block>
+
+<wxs module="formatTime">
+	var format=function(val){
+		if(val){
+	return val.split('-')[3]+":00"
+		}else{
+			return '不可预约'
+		}
+	}
+
+	module.exports = {
+	time:format
+	}
+</wxs>

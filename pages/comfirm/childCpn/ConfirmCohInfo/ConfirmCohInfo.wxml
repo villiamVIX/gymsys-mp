@@ -1,0 +1,11 @@
+<!--pages/comfirm/childCpn/ConfirmCohInfo/ConfirmCohInfo.wxml-->
+<view class="ConfirmCohInfo">
+	<view class="coach-image">
+		<image class="coach-pic" src="{{baseUrl+coachInfo.cohPic}}" />
+	</view>
+	<view class="coach-info">
+		<text class="coach-name">{{coachInfo.name}}</text>
+		<text class="coach-price">¥{{coachInfo.price}}</text>
+	</view>
+	<button class='cu-btn bg-green shadow' style="width: 180rpx;" >更换教练</button>
+</view>

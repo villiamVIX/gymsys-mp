@@ -1,21 +1,46 @@
-<!-- 顶部tab -->
-<block>
+<block wx:if="{{scroll}}">
+	<scroll-view scroll-x="{{true}}" style="white-space:nowrap;" scroll-into-view="category{{(current-2) > 0 ? (current-2) : 0}}"
+	 scroll-with-animation="{{true}}">
+
+		<view class="category-item" id="category{{index}}" style="padding:20rpx 15rpx;"
+		 wx:for="{{tabs}}" bind:tap="handleTap" wx:key="id" 
+		 data-date='{{item.name}}'
+		 data-index="{{index}}">
+		 
+			<view class="date-box">
+				{{dateSplit.week(item.week)}}
+				<view class="date-date {{index===current?'currentDate':''}}">
+				{{dateSplit.date(item.name)}}
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+
+</block>
+
+<block wx:else>
 	<view class="category-wrap">
-		<view class="category-item {{index===current?'current':''}}" wx:for="{{tabsTitle}}"
-		 bind:tap="handleTap" wx:key="id"
+		<view class="category-item {{index===current?'current':''}}" wx:for="{{tabs}}" bind:tap="handleTap" wx:key="index"
 		 data-index="{{index}}">
 			{{item.name}}
 		</view>
 	</view>
 </block>
-<!-- <block wx:if="{{scroll}}">
-	<scroll-view scroll-x="{{true}}" style="white-space:nowrap;" scroll-into-view="category{{(current-2) > 0 ? (current-2) : 0}}"
-	 scroll-with-animation="{{true}}">
 
-		<view class="category-item {{index===current?'current':''}}" id="category{{index}}" style="padding:20rpx 15rpx;"
-		 wx:for="{{tabs}}" bind:tap="handleTap" wx:key="id" data-index="{{index}}">
-			{{item[key]}}
-		</view>
-	</scroll-view>
-</block> -->
-<!-- <block wx:else> -->
+<wxs module="dateSplit">
+
+	var weekList= ["日", "一", "二", "三", "四", "五", "六"]
+
+	var SplitFun = function(val){
+	return val.split('-')[2]
+	};
+
+	var FormatWeek= function(week){
+	return '周'+weekList[week]
+	}
+
+	module.exports = {
+	date:SplitFun,
+	week:FormatWeek
+	}
+</wxs>
